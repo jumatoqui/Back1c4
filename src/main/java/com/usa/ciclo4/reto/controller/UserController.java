@@ -22,7 +22,7 @@ public class UserController {
     }
 
     @PostMapping("/new")
-    //@ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.CREATED)
     public void save(@RequestBody User user){
         userService.save(user);
     }
